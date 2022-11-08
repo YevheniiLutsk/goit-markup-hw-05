@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    
   </head>
   <body>
     <header class="header">
@@ -24,7 +25,7 @@
           <nav class="navigation-menu">
            
             <ul class="navigation">
-              <li class="navigation-menu-item"><a class="curent" href="./index.html">Студія</a></li>
+              <li class="navigation-menu-item current"><a href="./index.html">Студія</a></li>
               <li class="navigation-menu-item"><a href="./portfolio.html">Портфоліо</a></li>
               <li class="navigation-menu-item"><a href="#">Контакти</a></li>
             </ul>
@@ -52,7 +53,7 @@
         <div class="container">
           <div class ="container-box">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero_button" type="button">Замовити послугу</button>
+        <button class="hero_button" type="button" data-modal-open="" >Замовити послугу</button>
       </div>
         </div>
      
@@ -100,12 +101,15 @@
           <ul class="about-list">
             <li class="about-item">
               <img src="images/work_html.jpg" alt="work_html" width="370" />
+              <p class="about-text">Десктопні додатки</p>
             </li>
             <li class="about-item">
               <img src="images/work_phone.jpg" alt="work_phone" width="370" />
+              <p class="about-text">МОБІЛЬНІ ДОДАТКИ Мобільні додатки</p>
             </li>
             <li class="about-item">
               <img src="images/work_color.jpg" alt="work_color" width="370" />
+              <p class="about-text">Дизайнерські рішення </p>
             </li>
           </ul>
         </div>
@@ -342,7 +346,7 @@
         <a class="footer-logo" href="./index.html"><span>Web</span>Studio</a>
         <address>
           <ul class="footer-addres">
-            <li>
+            <li class="footer-address-item">
               <a
                 class="name-address"
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -351,12 +355,12 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
+            <li class="footer-address-item">
               <a class="footer-mail" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="footer-address-item">
               <a class="footer-phone" href="tel:380961111111"
                 >+38 096 111 11 11</a
               >
@@ -399,5 +403,17 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal="">
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close="">
+          <svg width="11" height="11">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+   
+    
+    <script src="./js/modal.js"></script>
   </body>
 </html>
